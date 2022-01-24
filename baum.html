@@ -1,0 +1,119 @@
+<!-- landing page, responsive design, hamburger menu, modern design -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bäume pflanzen - Gutes tun</title>
+    <link rel="stylesheet" href="baum.css">
+	<script src="https://kit.fontawesome.com/6a2012cfc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <nav class="navbar">
+           
+            <div class="left-nav">
+                <img src="img/logo.jpg">
+                <a href="#">Baumarten</a>
+                <a href="#">Baumpaten</a>
+                <a href="#">Umweltschutz</a>
+            </div>
+            <div class="right-nav">
+                <button>Aktiv werden!</button>
+            </div>
+    
+            <button type="button" class="hamburger" id="menu-btn" style="border: none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </nav>
+    
+        <div class="mobile-menu hidden" id="menu">
+                    <a href="#">Baumarten</a>
+                    <a href="#">Baumpaten</a>
+                    <a href="#">Umweltschutz</a>
+                
+            <div class="mobile-menu-bottom">
+                <button class="btn">Aktiv werden!</button>
+                <div>
+    
+    </div>
+            </div>
+        </div>
+    
+    <section>
+        <div class="grid">
+            <img src="img/laub.jpg">
+            <div>
+            <h1>Laubwälder</h1>
+            <p>Laubwälder sind Wälder, in denen fast ausschließlich Laub- und höchstens vereinzelt Nadelbäume vorkommen.</p>
+            <button class="btn">Mehr erfahren</button>
+            </div>
+    </div>
+    </section>
+    
+    <section>
+        <div class="grid grid-two">
+            <img src="img/nadel.jpg">
+            <div>
+            <h1>Nadelwälder</h1>
+            <p>Ein Nadelwald ist ein Wald, in dessen Baumschicht fast ausschließlich Nadelbäume zu finden sind.</p>
+            <button class="btn">Mehr erfahren</button>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="grid">
+            <img src="img/bambus.jpg">
+            <div>
+            <h1>Bambus</h1>
+            <p>Bambus ist eine der zwölf Unterfamilien aus der Familie der Süßgräser, der etwa 116 Gattungen zugerechnet werden.</p>
+            <button class="btn">Mehr erfahren</button>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="grid grid-two">
+            <img src="img/dschungel.jpg">
+            <div>
+            <h1>Dschungel</h1>
+            <p>Im engeren Sinne wird nur der ursprüngliche Urwald süd- und südostasiatischer Länder als Dschungel bezeichnet.</p>
+            <button class="btn">Mehr erfahren</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <a href="#"><i class="fas fa-tree"></i> Bäume</a>
+            <a href="#"><i class="fab fa-pagelines"></i> Pflanzen</a>
+            <a href="#"><i class="fas fa-street-view"></i> Verantwortung</a>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn')
+        const nav = document.getElementById('menu')
+        
+        function navToggle() {
+            btn.classList.toggle('open')
+            nav.classList.toggle('hidden')
+            document.body.classList.toggle('no-scroll')
+        }
+        
+        btn.addEventListener('click', navToggle)
+        
+        </script>
+<!-- Default nav -->
+<div class="default-nav">
+    <ul>
+        <li title="Zur Startseite"><a href="/index.html" target="_blank"><i class="fas fa-home"></i></a></li>
+        <li title="Zum Impressum"><a href="/impressum.html" target="_blank"><i class="fas fa-info"></i></a></li>
+    </ul>
+  </div>
+</body>
+</html>
